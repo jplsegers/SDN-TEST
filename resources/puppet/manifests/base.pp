@@ -60,7 +60,7 @@ file { "/etc/hosts":
     content => template("/vagrant/resources/puppet/templates/hosts.erb")
 }
 
-exec { "cp /usr/share/zoneinfo/Asia/Seoul /etc/localtime":
+exec { "cp /usr/share/zoneinfo/Europe/Paris /etc/localtime":
     user    => "root",
     timeout => "0",
 }
